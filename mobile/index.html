@@ -1,1 +1,377 @@
-PCFET0NUWVBFIGh0bWw+CjxodG1sIGxhbmc9ImVuIj4KPGhlYWQ+CjxtZXRhIGNoYXJzZXQ9IlVURi04Ij4KPG1ldGEgbmFtZT0idmlld3BvcnQiIGNvbnRlbnQ9IndpZHRoPWRldmljZS13aWR0aCwgaW5pdGlhbC1zY2FsZT0xLCB2aWV3cG9ydC1maXQ9Y292ZXIiPgo8dGl0bGU+Q2xpcHBlcnogb2YgQXNoZXZpbGxlIOKAlCBIYWlyY3V0cyBmb3IgTWVuICZhbXA7IFdvbWVuPC90aXRsZT4KPG1ldGEgbmFtZT0iZGVzY3JpcHRpb24iIGNvbnRlbnQ9IkNsaXBwZXJ6IG9mIEFzaGV2aWxsZSDigJQgZmFtaWx5IGhhaXIgc2hvcCBpbiBXb29kZmluLCBOQy4gV2Fsay1pbnMgd2VsY29tZS4gSGFpcmN1dHMsIGZhZGVzLCBiZWFyZCB0cmltcywgZWFyIHBpZXJjaW5nLCB3YXhpbmcgJiBuYWlsIHNlcnZpY2VzLiI+CjxsaW5rIHJlbD0iaWNvbiIgaHJlZj0iLi4vYXNzZXRzL2ltZy9mYXZpY29uLmljbyI+CjxsaW5rIHJlbD0icHJlY29ubmVjdCIgaHJlZj0iaHR0cHM6Ly9mb250cy5nb29nbGVhcGlzLmNvbSI+CjxsaW5rIHJlbD0icHJlY29ubmVjdCIgaHJlZj0iaHR0cHM6Ly9mb250cy5nc3RhdGljLmNvbSIgY3Jvc3NvcmlnaW4+CjxsaW5rIGhyZWY9Imh0dHBzOi8vZm9udHMuZ29vZ2xlYXBpcy5jb20vY3NzMj9mYW1pbHk9T3N3YWxkOndnaHRANDAwOzUwMDs2MDAmZmFtaWx5PUludGVyOndnaHRANDAwOzUwMDs2MDAmZGlzcGxheT1zd2FwIiByZWw9InN0eWxlc2hlZXQiPgo8c3R5bGU+Cjpyb290ewogIC0tYmc6IzE0MTQxNDsKICAtLWJnMjojMWQxZDFkOwogIC0tY2FyZDojMjIyMjIyOwogIC0tZ29sZDojZDlhNDQxOwogIC0tZ29sZC1zb2Z0OiNmMGM4NzM7CiAgLS10ZXh0OiNmNGYxZWE7CiAgLS1tdXRlZDojYjliMmE0OwogIC0tbGluZTojMzMzMDJhOwogIC0tY2FsbDojMWU4ZTRmOwogIC0tcmFkaXVzOjE0cHg7Cn0KKntib3gtc2l6aW5nOmJvcmRlci1ib3g7LXdlYmtpdC10YXAtaGlnaGxpZ2h0LWNvbG9yOnRyYW5zcGFyZW50fQpodG1se3Njcm9sbC1iZWhhdmlvcjpzbW9vdGh9CmJvZHl7CiAgbWFyZ2luOjA7YmFja2dyb3VuZDp2YXIoLS1iZyk7Y29sb3I6dmFyKC0tdGV4dCk7CiAgZm9udC1mYW1pbHk6J0ludGVyJyxzeXN0ZW0tdWksLWFwcGxlLXN5c3RlbSwnU2Vnb2UgVUknLHNhbnMtc2VyaWY7CiAgZm9udC1zaXplOjE2cHg7bGluZS1oZWlnaHQ6MS41NTsKICBwYWRkaW5nLWJvdHRvbTo5MnB4OyAvKiByb29tIGZvciBzdGlja3kgY2FsbCBiYXIgKi8KfQpoMSxoMixoMywuZGlzcGxheXtmb250LWZhbWlseTonT3N3YWxkJywnQXJpYWwgTmFycm93JyxzYW5zLXNlcmlmO3RleHQtdHJhbnNmb3JtOnVwcGVyY2FzZTtsZXR0ZXItc3BhY2luZzouMDRlbTttYXJnaW46MH0KYXtjb2xvcjppbmhlcml0fQoKLyogLS0tLS0tLS0tLSB0b3AgYmFyIC0tLS0tLS0tLS0gKi8KLnRvcGJhcnsKICBwb3NpdGlvbjpzdGlja3k7dG9wOjA7ei1pbmRleDo1MDsKICBkaXNwbGF5OmZsZXg7YWxpZ24taXRlbXM6Y2VudGVyO2p1c3RpZnktY29udGVudDpzcGFjZS1iZXR3ZWVuOwogIHBhZGRpbmc6MTBweCAxNnB4OwogIGJhY2tncm91bmQ6cmdiYSgyMCwyMCwyMCwuOTIpO2JhY2tkcm9wLWZpbHRlcjpibHVyKDEwcHgpOwogIGJvcmRlci1ib3R0b206MXB4IHNvbGlkIHZhcigtLWxpbmUpOwp9Ci50b3BiYXIgLmJyYW5ke2Rpc3BsYXk6ZmxleDthbGlnbi1pdGVtczpjZW50ZXI7Z2FwOjEwcHg7dGV4dC1kZWNvcmF0aW9uOm5vbmV9Ci50b3BiYXIgLmJyYW5kIGltZ3toZWlnaHQ6MzRweDt3aWR0aDphdXRvfQoudG9wYmFyIC5icmFuZCBzcGFue2ZvbnQtZmFtaWx5OidPc3dhbGQnLHNhbnMtc2VyaWY7dGV4dC10cmFuc2Zvcm06dXBwZXJjYXNlO2ZvbnQtc2l6ZToxN3B4O2xldHRlci1zcGFjaW5nOi4wNmVtfQoudG9wYmFyIC5jYWxsYnRuewogIGJhY2tncm91bmQ6dmFyKC0tY2FsbCk7Y29sb3I6I2ZmZjt0ZXh0LWRlY29yYXRpb246bm9uZTtmb250LXdlaWdodDo2MDA7CiAgcGFkZGluZzoxMHB4IDE4cHg7Ym9yZGVyLXJhZGl1czo5OTlweDtmb250LXNpemU6MTVweDsKfQoKLyogLS0tLS0tLS0tLSBoZXJvIC0tLS0tLS0tLS0gKi8KLmhlcm97CiAgdGV4dC1hbGlnbjpjZW50ZXI7cGFkZGluZzo0NHB4IDIwcHggMzRweDsKICBiYWNrZ3JvdW5kOnJhZGlhbC1ncmFkaWVudCgxMjAlIDkwJSBhdCA1MCUgMCUsIzJhMjQxOSAwJSx2YXIoLS1iZykgNjIlKTsKfQouaGVybyBpbWcubG9nb3t3aWR0aDptaW4oMjIwcHgsNjB2dyk7aGVpZ2h0OmF1dG87ZmlsdGVyOmRyb3Atc2hhZG93KDAgNnB4IDE4cHggcmdiYSgwLDAsMCwuNSkpfQouaGVybyAuZXN0ewogIG1hcmdpbi10b3A6MTRweDtjb2xvcjp2YXIoLS1nb2xkKTtmb250LWZhbWlseTonT3N3YWxkJyxzYW5zLXNlcmlmOwogIGxldHRlci1zcGFjaW5nOi4zNWVtO2ZvbnQtc2l6ZToxMnB4O3RleHQtdHJhbnNmb3JtOnVwcGVyY2FzZTsKfQouaGVybyBoMXtmb250LXNpemU6Y2xhbXAoMzBweCw4LjV2dyw0NHB4KTtsaW5lLWhlaWdodDoxLjA1O21hcmdpbjoxMHB4IDAgNnB4fQouaGVybyBwLnN1Yntjb2xvcjp2YXIoLS1tdXRlZCk7bWFyZ2luOjAgMCAyMnB4O2ZvbnQtc2l6ZToxNXB4fQouY3RhLXJvd3tkaXNwbGF5OmZsZXg7Z2FwOjEwcHg7anVzdGlmeS1jb250ZW50OmNlbnRlcjtmbGV4LXdyYXA6d3JhcH0KLmJ0bnsKICBkaXNwbGF5OmlubGluZS1ibG9jazt0ZXh0LWRlY29yYXRpb246bm9uZTtmb250LXdlaWdodDo2MDA7Zm9udC1zaXplOjE2cHg7CiAgcGFkZGluZzoxNHB4IDI2cHg7Ym9yZGVyLXJhZGl1czoxMnB4O21pbi13aWR0aDoxNTBweDt0ZXh0LWFsaWduOmNlbnRlcjsKfQouYnRuLmdvbGR7YmFja2dyb3VuZDp2YXIoLS1nb2xkKTtjb2xvcjojMTkxNTEwfQouYnRuLmdob3N0e2JvcmRlcjoxLjVweCBzb2xpZCB2YXIoLS1nb2xkKTtjb2xvcjp2YXIoLS1nb2xkLXNvZnQpfQoKLyogLS0tLS0tLS0tLSBzZWN0aW9ucyAtLS0tLS0tLS0tICovCnNlY3Rpb257cGFkZGluZzozMHB4IDE4cHh9Ci5zZWN0aW9uLWhlYWR7ZGlzcGxheTpmbGV4O2FsaWduLWl0ZW1zOmNlbnRlcjtnYXA6MTJweDttYXJnaW4tYm90dG9tOjE2cHh9Ci5zZWN0aW9uLWhlYWQgaDJ7Zm9udC1zaXplOjIycHg7ZmxleDowIDAgYXV0b30KLnNlY3Rpb24taGVhZCAucnVsZXtmbGV4OjE7aGVpZ2h0OjFweDtiYWNrZ3JvdW5kOnZhcigtLWxpbmUpfQouY2FyZHsKICBiYWNrZ3JvdW5kOnZhcigtLWNhcmQpO2JvcmRlcjoxcHggc29saWQgdmFyKC0tbGluZSk7Ym9yZGVyLXJhZGl1czp2YXIoLS1yYWRpdXMpOwogIHBhZGRpbmc6MTZweDttYXJnaW4tYm90dG9tOjEycHg7Cn0KLndhbGtpbnsKICB0ZXh0LWFsaWduOmNlbnRlcjtiYWNrZ3JvdW5kOmxpbmVhci1ncmFkaWVudCgxMzVkZWcsIzI0MWQxMCwjMWQxZDFkKTsKICBib3JkZXI6MXB4IHNvbGlkICM0YTNkMjI7Cn0KLndhbGtpbiAuYmlne2ZvbnQtZmFtaWx5OidPc3dhbGQnLHNhbnMtc2VyaWY7Zm9udC1zaXplOjI0cHg7Y29sb3I6dmFyKC0tZ29sZC1zb2Z0KTt0ZXh0LXRyYW5zZm9ybTp1cHBlcmNhc2U7bGV0dGVyLXNwYWNpbmc6LjA1ZW19Ci53YWxraW4gcHtjb2xvcjp2YXIoLS1tdXRlZCk7bWFyZ2luOjZweCAwIDA7Zm9udC1zaXplOjE0LjVweH0KCi8qIGhvdXJzICovCi5ob3Vycy1ncmlke2Rpc3BsYXk6Z3JpZDtncmlkLXRlbXBsYXRlLWNvbHVtbnM6MWZyIGF1dG87Z2FwOjZweCAxNHB4O2ZvbnQtc2l6ZToxNS41cHh9Ci5ob3Vycy1ncmlkIC5ke2NvbG9yOnZhcigtLW11dGVkKX0KLmhvdXJzLWdyaWQgLnR7Zm9udC13ZWlnaHQ6NjAwO3RleHQtYWxpZ246cmlnaHR9Ci5ob3Vycy1ub3Rle2ZvbnQtc2l6ZToxM3B4O2NvbG9yOnZhcigtLW11dGVkKTttYXJnaW4tdG9wOjEwcHh9Ci5ob3Vycy1ub3RlIHN0cm9uZ3tjb2xvcjp2YXIoLS1nb2xkLXNvZnQpfQoKLyogcHJpY2UgbWVudSAqLwoucHJpY2UtaXRlbXsKICBkaXNwbGF5OmZsZXg7anVzdGlmeS1jb250ZW50OnNwYWNlLWJldHdlZW47YWxpZ24taXRlbXM6YmFzZWxpbmU7Z2FwOjEycHg7CiAgcGFkZGluZzoxMXB4IDJweDtib3JkZXItYm90dG9tOjFweCBkYXNoZWQgIzNhMzcyZjsKfQoucHJpY2UtaXRlbTpsYXN0LWNoaWxke2JvcmRlci1ib3R0b206bm9uZX0KLnByaWNlLWl0ZW0gLm5hbWV7Zm9udC1zaXplOjE2cHh9Ci5wcmljZS1pdGVtIC5hbXR7CiAgZm9udC1mYW1pbHk6J09zd2FsZCcsc2Fucy1zZXJpZjtmb250LXNpemU6MTlweDtjb2xvcjp2YXIoLS1nb2xkLXNvZnQpO3doaXRlLXNwYWNlOm5vd3JhcDsKfQouZmluZXtmb250LXNpemU6MTNweDtjb2xvcjp2YXIoLS1tdXRlZCk7bWFyZ2luLXRvcDoxMnB4fQouZmluZSBhe2NvbG9yOnZhcigtLWdvbGQtc29mdCl9Ci5jYWxsb3V0ewogIGJhY2tncm91bmQ6IzI0MWQxMDtib3JkZXI6MXB4IHNvbGlkICM0YTNkMjI7Ym9yZGVyLXJhZGl1czp2YXIoLS1yYWRpdXMpOwogIHBhZGRpbmc6MTRweCAxNnB4O21hcmdpbi10b3A6MTJweDtmb250LXNpemU6MTVweDsKfQouY2FsbG91dCBzdHJvbmd7Y29sb3I6dmFyKC0tZ29sZC1zb2Z0KX0KCi8qIHNwZWNpYWx0aWVzICovCi5jaGlwc3tkaXNwbGF5OmZsZXg7ZmxleC13cmFwOndyYXA7Z2FwOjhweH0KLmNoaXB7CiAgYmFja2dyb3VuZDojMjYyMjFhO2JvcmRlcjoxcHggc29saWQgIzRhM2QyMjtjb2xvcjp2YXIoLS1nb2xkLXNvZnQpOwogIHBhZGRpbmc6OXB4IDE0cHg7Ym9yZGVyLXJhZGl1czo5OTlweDtmb250LXNpemU6MTRweDtmb250LXdlaWdodDo1MDA7CiAgZm9udC1mYW1pbHk6J09zd2FsZCcsc2Fucy1zZXJpZjt0ZXh0LXRyYW5zZm9ybTp1cHBlcmNhc2U7bGV0dGVyLXNwYWNpbmc6LjA1ZW07Cn0KCi8qIHN0YWZmICovCi5zdGFmZi1jYXJke2Rpc3BsYXk6ZmxleDtnYXA6MTRweDthbGlnbi1pdGVtczpmbGV4LXN0YXJ0fQouc3RhZmYtY2FyZCBpbWd7CiAgd2lkdGg6NzZweDtoZWlnaHQ6NzZweDtvYmplY3QtZml0OmNvdmVyO2JvcmRlci1yYWRpdXM6NTAlO2ZsZXg6MCAwIGF1dG87CiAgYm9yZGVyOjJweCBzb2xpZCB2YXIoLS1nb2xkKTsKfQouc3RhZmYtY2FyZCAud2hvIGgze2ZvbnQtc2l6ZToxN3B4O21hcmdpbi1ib3R0b206MnB4fQouc3RhZmYtY2FyZCAud2hvIC5yb2xle2ZvbnQtc2l6ZToxM3B4O2NvbG9yOnZhcigtLWdvbGQpO3RleHQtdHJhbnNmb3JtOnVwcGVyY2FzZTtsZXR0ZXItc3BhY2luZzouMDhlbTttYXJnaW4tYm90dG9tOjZweH0KLnN0YWZmLWNhcmQgLndobyBwe2ZvbnQtc2l6ZToxNHB4O2NvbG9yOnZhcigtLW11dGVkKTttYXJnaW46MH0KLnN0YWZmLWNhcmQgLndobyBwLmZ1bGx7ZGlzcGxheTpub25lfQouc3RhZmYtY2FyZC5vcGVuIC53aG8gcC5mdWxse2Rpc3BsYXk6YmxvY2s7bWFyZ2luLXRvcDo4cHh9Ci5zdGFmZi1jYXJkIC53aG8gcC50ZWFzZXJ7ZGlzcGxheTpibG9ja30KLnN0YWZmLWNhcmQub3BlbiAud2hvIHAudGVhc2Vye2Rpc3BsYXk6bm9uZX0KLm1vcmV7CiAgYmFja2dyb3VuZDpub25lO2JvcmRlcjpub25lO2NvbG9yOnZhcigtLWdvbGQtc29mdCk7Zm9udC1zaXplOjE0cHg7Zm9udC13ZWlnaHQ6NjAwOwogIHBhZGRpbmc6NnB4IDAgMDtjdXJzb3I6cG9pbnRlcjsKfQoKLyogZ3VhcmFudGVlICovCi5ndWFyYW50ZWV7Ym9yZGVyLWxlZnQ6M3B4IHNvbGlkIHZhcigtLWdvbGQpO3BhZGRpbmctbGVmdDoxNnB4fQouZ3VhcmFudGVlIHB7bWFyZ2luOjAgMCA4cHg7Zm9udC1zaXplOjE1cHg7Y29sb3I6dmFyKC0tbXV0ZWQpfQouZ3VhcmFudGVlIHN0cm9uZ3tjb2xvcjp2YXIoLS10ZXh0KX0KCi8qIGZpbmQgdXMgKi8KLmFkZHJ7Zm9udC1zaXplOjE2cHg7bGluZS1oZWlnaHQ6MS43fQouYWRkciAubGJse2NvbG9yOnZhcigtLWdvbGQpO2ZvbnQtc2l6ZToxMnB4O3RleHQtdHJhbnNmb3JtOnVwcGVyY2FzZTtsZXR0ZXItc3BhY2luZzouMTVlbTtkaXNwbGF5OmJsb2NrO21hcmdpbi10b3A6MTBweH0KLmFkZHIgLmxibDpmaXJzdC1jaGlsZHttYXJnaW4tdG9wOjB9Ci5hZGRyIGEuYmlnLWxpbmt7Zm9udC1zaXplOjE5cHg7Zm9udC13ZWlnaHQ6NjAwO2NvbG9yOnZhcigtLWdvbGQtc29mdCk7dGV4dC1kZWNvcmF0aW9uOm5vbmV9Ci5tYXBidG57CiAgZGlzcGxheTpibG9jazt0ZXh0LWFsaWduOmNlbnRlcjttYXJnaW4tdG9wOjE0cHg7YmFja2dyb3VuZDp2YXIoLS1nb2xkKTtjb2xvcjojMTkxNTEwOwogIGZvbnQtd2VpZ2h0OjYwMDt0ZXh0LWRlY29yYXRpb246bm9uZTtwYWRkaW5nOjE1cHg7Ym9yZGVyLXJhZGl1czoxMnB4O2ZvbnQtc2l6ZToxNnB4Owp9CgovKiBmb290ZXIgKi8KZm9vdGVye3RleHQtYWxpZ246Y2VudGVyO3BhZGRpbmc6MjZweCAxOHB4IDEwcHg7Y29sb3I6dmFyKC0tbXV0ZWQpO2ZvbnQtc2l6ZToxMy41cHh9CmZvb3RlciBhe2NvbG9yOnZhcigtLWdvbGQtc29mdCl9CgovKiBzdGlja3kgY2FsbCBiYXIgKi8KLmNhbGxiYXJ7CiAgcG9zaXRpb246Zml4ZWQ7bGVmdDowO3JpZ2h0OjA7Ym90dG9tOjA7ei1pbmRleDo2MDsKICBkaXNwbGF5OmZsZXg7Z2FwOjEwcHg7cGFkZGluZzoxMnB4IDE0cHggY2FsYygxMnB4ICsgZW52KHNhZmUtYXJlYS1pbnNldC1ib3R0b20pKTsKICBiYWNrZ3JvdW5kOnJnYmEoMjAsMjAsMjAsLjk2KTtiYWNrZHJvcC1maWx0ZXI6Ymx1cigxMHB4KTsKICBib3JkZXItdG9wOjFweCBzb2xpZCB2YXIoLS1saW5lKTsKfQouY2FsbGJhciBhewogIGZsZXg6MTt0ZXh0LWFsaWduOmNlbnRlcjt0ZXh0LWRlY29yYXRpb246bm9uZTtmb250LXdlaWdodDo3MDA7Zm9udC1zaXplOjE2LjVweDsKICBwYWRkaW5nOjE0cHg7Ym9yZGVyLXJhZGl1czoxMnB4Owp9Ci5jYWxsYmFyIC5jYWxse2JhY2tncm91bmQ6dmFyKC0tY2FsbCk7Y29sb3I6I2ZmZn0KLmNhbGxiYXIgLmRpcntiYWNrZ3JvdW5kOiMyYzJjMmM7Y29sb3I6dmFyKC0tZ29sZC1zb2Z0KTtib3JkZXI6MXB4IHNvbGlkICM0YTNkMjJ9CgovKiByZXZlYWwgKi8KLnJ2e29wYWNpdHk6MDt0cmFuc2Zvcm06dHJhbnNsYXRlWSgxOHB4KTt0cmFuc2l0aW9uOm9wYWNpdHkgLjVzIGVhc2UsdHJhbnNmb3JtIC41cyBlYXNlfQoucnYuaW57b3BhY2l0eToxO3RyYW5zZm9ybTpub25lfQpAbWVkaWEgKHByZWZlcnMtcmVkdWNlZC1tb3Rpb246cmVkdWNlKXsucnZ7b3BhY2l0eToxO3RyYW5zZm9ybTpub25lO3RyYW5zaXRpb246bm9uZX19Cjwvc3R5bGU+CjwvaGVhZD4KPGJvZHk+Cgo8aGVhZGVyIGNsYXNzPSJ0b3BiYXIiPgogIDxhIGNsYXNzPSJicmFuZCIgaHJlZj0iI3RvcCIgYXJpYS1sYWJlbD0iQ2xpcHBlcnogb2YgQXNoZXZpbGxlIGhvbWUiPgogICAgPGltZyBzcmM9Ii4uL2Fzc2V0cy9pbWcvY2xpcHovbG9nby1jbGlwcGVkLnBuZyIgYWx0PSJDbGlwcGVyeiBsb2dvIj4KICAgIDxzcGFuPkNsaXBwZXJ6PC9zcGFuPgogIDwvYT4KICA8YSBjbGFzcz0iY2FsbGJ0biIgaHJlZj0idGVsOisxODI4NDg0NzIyMCI+Q2FsbDwvYT4KPC9oZWFkZXI+Cgo8ZGl2IGNsYXNzPSJoZXJvIiBpZD0idG9wIj4KICA8aW1nIGNsYXNzPSJsb2dvIiBzcmM9Ii4uL2Fzc2V0cy9pbWcvY2xpcHovbG9nby1jbGlwcGVkLnBuZyIgYWx0PSJDbGlwcGVyeiBvZiBBc2hldmlsbGUiPgogIDxkaXYgY2xhc3M9ImVzdCI+RXN0LiAyMDIxICZtaWRkb3Q7IFdvb2RmaW4sIE5DPC9kaXY+CiAgPGgxPkdyZWF0IGN1dHMsPGJyPnplcm8gYXR0aXR1ZGUuPC9oMT4KICA8cCBjbGFzcz0ic3ViIj5BIGZhbWlseSBoYWlyIHNob3AgaW4gdGhlIGhlYXJ0IG9mIFdvb2RmaW4g4oCUIG5leHQgZG9vciB0byBCZWxsYWdpbyBCaXN0cm8uPGJyPkxhZGllcyBhbmQgY2hpbGRyZW4gd2VsY29tZS4gV2Fsay1pbnMgd2VsY29tZS48L3A+CiAgPGRpdiBjbGFzcz0iY3RhLXJvdyI+CiAgICA8YSBjbGFzcz0iYnRuIGdvbGQiIGhyZWY9InRlbDorMTgyODQ4NDcyMjAiPkNhbGwgKDgyOCkgNDg0LTcyMjA8L2E+CiAgICA8YSBjbGFzcz0iYnRuIGdob3N0IiBocmVmPSJodHRwczovL2FwcC50aGVjdXQuY28vYmFyYmVycy82OGI4NWZjNDE5NWMzYWM4OTM4MzAxNDEiIHRhcmdldD0iX2JsYW5rIiByZWw9Im5vb3BlbmVyIj5Cb29rIE5pY2s8L2E+CiAgPC9kaXY+CjwvZGl2PgoKPHNlY3Rpb24gY2xhc3M9InJ2Ij4KICA8ZGl2IGNsYXNzPSJjYXJkIHdhbGtpbiI+CiAgICA8ZGl2IGNsYXNzPSJiaWciPk5vIGFwcG9pbnRtZW50cyBuZWNlc3Nhcnk8L2Rpdj4KICAgIDxwPkp1c3Qgd2FsayBvbiBpbiBhbmQgZW5qb3kgYSBiZXZlcmFnZSBmcm9tIG91ciBjb2ZmZWUgYmFyIHdoaWxlIHlvdSB3YWl0IOKAlCBmbGF0LXNjcmVlbiBUViwgZ29vZCByZWFkcywgYW5kIHNob3AgYmFudGVyIGluY2x1ZGVkLjwvcD4KICA8L2Rpdj4KPC9zZWN0aW9uPgoKPHNlY3Rpb24gaWQ9ImhvdXJzIiBjbGFzcz0icnYiPgogIDxkaXYgY2xhc3M9InNlY3Rpb24taGVhZCI+PGgyPkhvdXJzPC9oMj48ZGl2IGNsYXNzPSJydWxlIj48L2Rpdj48L2Rpdj4KICA8ZGl2IGNsYXNzPSJjYXJkIj4KICAgIDxkaXYgY2xhc3M9ImhvdXJzLWdyaWQiPgogICAgICA8c3BhbiBjbGFzcz0iZCI+TW9uZGF5IOKAkyBGcmlkYXk8L3NwYW4+PHNwYW4gY2xhc3M9InQiPjk6MDAg4oCTIDQ6MzA8L3NwYW4+CiAgICAgIDxzcGFuIGNsYXNzPSJkIj5TYXR1cmRheTwvc3Bhbj48c3BhbiBjbGFzcz0idCI+OTowMCDigJMgMjowMDwvc3Bhbj4KICAgICAgPHNwYW4gY2xhc3M9ImQiPlN1bmRheTwvc3Bhbj48c3BhbiBjbGFzcz0idCI+Q2xvc2VkPC9zcGFuPgogICAgPC9kaXY+CiAgICA8ZGl2IGNsYXNzPSJob3Vycy1ub3RlIj48c3Ryb25nPkRheWxpZ2h0IHNhdmluZ3MgaG91cnM6PC9zdHJvbmc+IE1vbuKAk0ZyaSA5OjAwIOKAkyA0OjAwLCBTYXQgOTowMCDigJMgMjowMCwgU3VuIGNsb3NlZC48L2Rpdj4KICA8L2Rpdj4KPC9zZWN0aW9uPgoKPHNlY3Rpb24gaWQ9InByaWNlcyIgY2xhc3M9InJ2Ij4KICA8ZGl2IGNsYXNzPSJzZWN0aW9uLWhlYWQiPjxoMj5QcmljZSBNZW51PC9oMj48ZGl2IGNsYXNzPSJydWxlIj48L2Rpdj48L2Rpdj4KICA8ZGl2IGNsYXNzPSJjYXJkIj4KICAgIDxkaXYgY2xhc3M9InByaWNlLWl0ZW0iPjxzcGFuIGNsYXNzPSJuYW1lIj5TdGFuZGFyZCBIYWlyY3V0PC9zcGFuPjxzcGFuIGNsYXNzPSJhbXQiPiQyNTwvc3Bhbj48L2Rpdj4KICAgIDxkaXYgY2xhc3M9InByaWNlLWl0ZW0iPjxzcGFuIGNsYXNzPSJuYW1lIj5MYWRpZXMgQ3V0PC9zcGFuPjxzcGFuIGNsYXNzPSJhbXQiPiQzMDwvc3Bhbj48L2Rpdj4KICAgIDxkaXYgY2xhc3M9InByaWNlLWl0ZW0iPjxzcGFuIGNsYXNzPSJuYW1lIj5DdXQgdy8gQmVhcmQgVHJpbTwvc3Bhbj48c3BhbiBjbGFzcz0iYW10Ij4kMzU8L3NwYW4+PC9kaXY+CiAgICA8ZGl2IGNsYXNzPSJwcmljZS1pdGVtIj48c3BhbiBjbGFzcz0ibmFtZSI+Q3V0IHcvIEZvaWwgU2hhdmU8L3NwYW4+PHNwYW4gY2xhc3M9ImFtdCI+JDM1PC9zcGFuPjwvZGl2PgogICAgPGRpdiBjbGFzcz0icHJpY2UtaXRlbSI+PHNwYW4gY2xhc3M9Im5hbWUiPlNraW4gRmFkZTwvc3Bhbj48c3BhbiBjbGFzcz0iYW10Ij4kMzA8L3NwYW4+PC9kaXY+CiAgICA8ZGl2IGNsYXNzPSJwcmljZS1pdGVtIj48c3BhbiBjbGFzcz0ibmFtZSI+QnV6eiBDdXQ8L3NwYW4+PHNwYW4gY2xhc3M9ImFtdCI+JDIwPC9zcGFuPjwvZGl2PgogICAgPGRpdiBjbGFzcz0icHJpY2UtaXRlbSI+PHNwYW4gY2xhc3M9Im5hbWUiPlVuZGVyY3V0PC9zcGFuPjxzcGFuIGNsYXNzPSJhbXQiPiQxNTwvc3Bhbj48L2Rpdj4KICAgIDxkaXYgY2xhc3M9InByaWNlLWl0ZW0iPjxzcGFuIGNsYXNzPSJuYW1lIj5CZWFyZCBUcmltPC9zcGFuPjxzcGFuIGNsYXNzPSJhbXQiPiQxNTwvc3Bhbj48L2Rpdj4KICAgIDxkaXYgY2xhc3M9InByaWNlLWl0ZW0iPjxzcGFuIGNsYXNzPSJuYW1lIj5Gb2lsIFNoYXZlPC9zcGFuPjxzcGFuIGNsYXNzPSJhbXQiPiQxNTwvc3Bhbj48L2Rpdj4KICAgIDxkaXYgY2xhc3M9InByaWNlLWl0ZW0iPjxzcGFuIGNsYXNzPSJuYW1lIj5CYW5nIFRyaW08L3NwYW4+PHNwYW4gY2xhc3M9ImFtdCI+JDU8L3NwYW4+PC9kaXY+CiAgICA8ZGl2IGNsYXNzPSJwcmljZS1pdGVtIj48c3BhbiBjbGFzcz0ibmFtZSI+RWRnZSAvIFNoYXBlIFVwPC9zcGFuPjxzcGFuIGNsYXNzPSJhbXQiPiQxNTwvc3Bhbj48L2Rpdj4KICAgIDxkaXYgY2xhc3M9InByaWNlLWl0ZW0iPjxzcGFuIGNsYXNzPSJuYW1lIj5TaGFtcG9vPC9zcGFuPjxzcGFuIGNsYXNzPSJhbXQiPiQxMDwvc3Bhbj48L2Rpdj4KICAgIDxkaXYgY2xhc3M9InByaWNlLWl0ZW0iPjxzcGFuIGNsYXNzPSJuYW1lIj5CbG93IERyeSAvIFN0eWxlPC9zcGFuPjxzcGFuIGNsYXNzPSJhbXQiPiQyMDwvc3Bhbj48L2Rpdj4KICAgIDxwIGNsYXNzPSJmaW5lIj4qU2VlIGJvb2tpbmcgYXBwIGZvciBOaWNrJ3MgcHJpY2VzLiBBbGwgaGFpcmN1dHMgaW5jbHVkZSBmaW5pc2hpbmcgd29yayDigJQgc3RyYWlnaHQgcmF6b3IgbmVjayBzaGF2ZSBieSByZXF1ZXN0LjwvcD4KICA8L2Rpdj4KICA8ZGl2IGNsYXNzPSJjYWxsb3V0Ij4KICAgIDxzdHJvbmc+RWFyIHBpZXJjaW5nICZhbXA7IHdheGluZzwvc3Ryb25nPiDigJQgY2FsbCBmb3IgZGV0YWlscy48YnI+CiAgICA8c3Ryb25nPkJhc2ljIG5haWwgc2VydmljZXM8L3N0cm9uZz4g4oCUIGJ5IGFwcG9pbnRtZW50IHdpdGggTGluZGEuCiAgPC9kaXY+CiAgPHAgY2xhc3M9ImZpbmUiPkFsbCBwcmljZXMgc3ViamVjdCB0byBjaGFuZ2UgYXQgdGhlIHN0eWxpc3QncyBkaXNjcmV0aW9uLiBBVE0gb24gc2l0ZSAmbWlkZG90OyBGcmVlIFdpRmkuPC9wPgo8L3NlY3Rpb24+Cgo8c2VjdGlvbiBpZD0ic2VydmljZXMiIGNsYXNzPSJydiI+CiAgPGRpdiBjbGFzcz0ic2VjdGlvbi1oZWFkIj48aDI+U3BlY2lhbHRpZXM8L2gyPjxkaXYgY2xhc3M9InJ1bGUiPjwvZGl2PjwvZGl2PgogIDxkaXYgY2xhc3M9ImNoaXBzIj4KICAgIDxzcGFuIGNsYXNzPSJjaGlwIj5GYWRlczwvc3Bhbj48c3BhbiBjbGFzcz0iY2hpcCI+RmxhdHRvcHM8L3NwYW4+CiAgICA8c3BhbiBjbGFzcz0iY2hpcCI+VGFwZXJzPC9zcGFuPjxzcGFuIGNsYXNzPSJjaGlwIj5VbmRlcmN1dHM8L3NwYW4+CiAgICA8c3BhbiBjbGFzcz0iY2hpcCI+SGlnaC1hbmQtVGlnaHRzPC9zcGFuPjxzcGFuIGNsYXNzPSJjaGlwIj5CdXp6LUN1dHM8L3NwYW4+CiAgICA8c3BhbiBjbGFzcz0iY2hpcCI+QmFsZCBTaGF2ZXM8L3NwYW4+PHNwYW4gY2xhc3M9ImNoaXAiPkJlYXJkIFRyaW1zPC9zcGFuPgogICAgPHNwYW4gY2xhc3M9ImNoaXAiPkJlYXJkIEZyaWVuZGx5PC9zcGFuPgogIDwvZGl2Pgo8L3NlY3Rpb24+Cgo8c2VjdGlvbiBpZD0ic3RhZmYiIGNsYXNzPSJydiI+CiAgPGRpdiBjbGFzcz0ic2VjdGlvbi1oZWFkIj48aDI+TWVldCB0aGUgU3RhZmY8L2gyPjxkaXYgY2xhc3M9InJ1bGUiPjwvZGl2PjwvZGl2PgoKICA8ZGl2IGNsYXNzPSJjYXJkIHN0YWZmLWNhcmQiPgogICAgPGltZyBzcmM9Ii4uL2Fzc2V0cy9pbWcvYXVyb3JhLmpwZyIgYWx0PSJBdXJvcmEgT3p6aW1vIj4KICAgIDxkaXYgY2xhc3M9IndobyI+CiAgICAgIDxoMz5BdXJvcmEgT3p6aW1vPC9oMz48ZGl2IGNsYXNzPSJyb2xlIj5Pd25lciAmYW1wOyBGb3VuZGVyPC9kaXY+CiAgICAgIDxwIGNsYXNzPSJ0ZWFzZXIiPkxpY2Vuc2VkIGNvc21ldG9sb2dpc3Qgc2luY2UgMTk4MiDigJQgNDArIHllYXJzIGJlaGluZCB0aGUgY2hhaXIuPC9wPgogICAgICA8cCBjbGFzcz0iZnVsbCI+QXVyb3JhIGhhcyBob25lZCBoZXIgY3JhZnQgZm9yIG92ZXIgZm91ciBkZWNhZGVzLCBhcHByZW50aWNpbmcgd2l0aCBtYXN0ZXIgYmFyYmVycyBhbmQgd29ya2luZyAxMyB5ZWFycyBhdCBBc2hldmlsbGUgaWNvbnMgRm94IEJhcmJlcnNob3AgYW5kIEpvZSBLaW5ncy4gSW4gMjAyMSBzaGUgZm91bmRlZCBDbGlwcGVyeiwgYmxlbmRpbmcgaGVyIHdlYWx0aCBvZiBleHBlcmllbmNlIHdpdGggYSB3YXJtLCBhcnRpc3RpYyB0b3VjaC48L3A+CiAgICAgIDxidXR0b24gY2xhc3M9Im1vcmUiIHR5cGU9ImJ1dHRvbiI+UmVhZCBtb3JlPC9idXR0b24+CiAgICA8L2Rpdj4KICA8L2Rpdj4KCiAgPGRpdiBjbGFzcz0iY2FyZCBzdGFmZi1jYXJkIj4KICAgIDxpbWcgc3JjPSIuLi9hc3NldHMvaW1nL2xpbmRhLmpwZyIgYWx0PSJMaW5kYSBTcGVhcnMiPgogICAgPGRpdiBjbGFzcz0id2hvIj4KICAgICAgPGgzPkxpbmRhIFNwZWFyczwvaDM+PGRpdiBjbGFzcz0icm9sZSI+U3R5bGlzdCAmbWlkZG90OyBOYWlsczwvZGl2PgogICAgICA8cCBjbGFzcz0idGVhc2VyIj5JbiB0aGUgYmVhdXR5IGluZHVzdHJ5IHNpbmNlIDE5ODI7IDEzIHllYXJzIGF0IEpvZSBLaW5ncy48L3A+CiAgICAgIDxwIGNsYXNzPSJmdWxsIj5MaW5kYSBtb3ZlZCB0byBBc2hldmlsbGUgZnJvbSBTcHJpbmdmaWVsZCwgTWlzc291cmkgaW4gMTk5NC4gU2hlIHNwZW50IDEzIHllYXJzIGF0IEpvZSBLaW5ncyBIYWlyIFNob3Agc2VydmluZyBhIHdpZGUgcmFuZ2Ugb2YgY3VzdG9tZXJzIOKAlCBhbmQgc2hlIGhhbmRsZXMgQ2xpcHBlcnoncyBuYWlsIHNlcnZpY2VzIGJ5IGFwcG9pbnRtZW50LjwvcD4KICAgICAgPGJ1dHRvbiBjbGFzcz0ibW9yZSIgdHlwZT0iYnV0dG9uIj5SZWFkIG1vcmU8L2J1dHRvbj4KICAgIDwvZGl2PgogIDwvZGl2PgoKICA8ZGl2IGNsYXNzPSJjYXJkIHN0YWZmLWNhcmQiPgogICAgPGltZyBzcmM9Ii4uL2Fzc2V0cy9pbWcva2VsbHkuanBnIiBhbHQ9IktlbGx5IFRob3JudG9uIj4KICAgIDxkaXYgY2xhc3M9IndobyI+CiAgICAgIDxoMz5LZWxseSBUaG9ybnRvbjwvaDM+PGRpdiBjbGFzcz0icm9sZSI+U3R5bGlzdDwvZGl2PgogICAgICA8cCBjbGFzcz0idGVhc2VyIj5DdXR0aW5nIHNpbmNlIDE5ODgg4oCUIFN1cGVyY3V0cyBtYW5hZ2VtZW50IHRvIGNsYXNzaWMgYmFyYmVyc2hvcHMuPC9wPgogICAgICA8cCBjbGFzcz0iZnVsbCI+S2VsbHkgc3RhcnRlZCBpbiBJbmRpYW5hcG9saXMgaW4gMTk4OCwgb3BlbmVkIGFuZCBtYW5hZ2VkIGEgU3VwZXJjdXRzIGluIE5hcGxlcywgRkwsIHRoZW4gaG9uZWQgaGVyIGJhcmJlcmluZyBpbiBsb2NhbCBzaG9wcy4gU2hlIG1vdmVkIHRvIFdlc3Rlcm4gTm9ydGggQ2Fyb2xpbmEgaW4gMjAxMCBhbmQgbm93IGJyaW5ncyBoZXIgcGFzc2lvbiBmb3IgdGhlIHBlcmZlY3QgaGFpcmN1dCB0byBDbGlwcGVyei48L3A+CiAgICAgIDxidXR0b24gY2xhc3M9Im1vcmUiIHR5cGU9ImJ1dHRvbiI+UmVhZCBtb3JlPC9idXR0b24+CiAgICA8L2Rpdj4KICA8L2Rpdj4KCiAgPGRpdiBjbGFzcz0iY2FyZCBzdGFmZi1jYXJkIj4KICAgIDxpbWcgc3JjPSIuLi9hc3NldHMvaW1nL2RlYm9yYWguanBnIiBhbHQ9IkRlYm9yYWggU3Rld2FydCI+CiAgICA8ZGl2IGNsYXNzPSJ3aG8iPgogICAgICA8aDM+RGVib3JhaCBTdGV3YXJ0PC9oMz48ZGl2IGNsYXNzPSJyb2xlIj5TdHlsaXN0PC9kaXY+CiAgICAgIDxwIGNsYXNzPSJ0ZWFzZXIiPkN1dHRpbmcgc2luY2UgMTk5NiDigJQgMjAgeWVhcnMgY28tb3duaW5nIEZveCBCYXJiZXJzaG9wLjwvcD4KICAgICAgPHAgY2xhc3M9ImZ1bGwiPkEgTWFkaXNvbiBDb3VudHkgbmF0aXZlLCBEZWJvcmFoIGNvLW93bmVkIGFuZCBvcGVyYXRlZCBGb3ggQmFyYmVyc2hvcCBpbiBBc2hldmlsbGUgd2l0aCBoZXIgaHVzYmFuZCBmb3IgMjAgeWVhcnMuIFNoZSBsb3ZlcyB0YWtpbmcgaGVyIHRpbWUgYW5kIGJ1aWxkaW5nIHJlbGF0aW9uc2hpcHMgd2l0aCBuZXcgY2xpZW50cy48L3A+CiAgICAgIDxidXR0b24gY2xhc3M9Im1vcmUiIHR5cGU9ImJ1dHRvbiI+UmVhZCBtb3JlPC9idXR0b24+CiAgICA8L2Rpdj4KICA8L2Rpdj4KCiAgPGRpdiBjbGFzcz0iY2FyZCBzdGFmZi1jYXJkIj4KICAgIDxpbWcgc3JjPSIuLi9hc3NldHMvaW1nL2pvYW5uZS5qcGciIGFsdD0iSm9hbm5lIFF1ZWVuIj4KICAgIDxkaXYgY2xhc3M9IndobyI+CiAgICAgIDxoMz5Kb2FubmUgUXVlZW48L2gzPjxkaXYgY2xhc3M9InJvbGUiPlN0eWxpc3Q8L2Rpdj4KICAgICAgPHAgY2xhc3M9InRlYXNlciI+Q2xpcHBlcnogc3R5bGlzdC48L3A+CiAgICAgIDxidXR0b24gY2xhc3M9Im1vcmUiIHR5cGU9ImJ1dHRvbiIgaGlkZGVuPlJlYWQgbW9yZTwvYnV0dG9uPgogICAgPC9kaXY+CiAgPC9kaXY+CgogIDxkaXYgY2xhc3M9ImNhcmQgc3RhZmYtY2FyZCI+CiAgICA8aW1nIHNyYz0iLi4vYXNzZXRzL2ltZy9iZWxpbmRhLmpwZyIgYWx0PSJCZWxpbmRhIENhcHV0byI+CiAgICA8ZGl2IGNsYXNzPSJ3aG8iPgogICAgICA8aDM+QmVsaW5kYSBDYXB1dG88L2gzPjxkaXYgY2xhc3M9InJvbGUiPlN0eWxpc3Q8L2Rpdj4KICAgICAgPHAgY2xhc3M9InRlYXNlciI+NDArIHllYXJzIGluIGhhaXIg4oCUIDIyIHllYXJzIHdpdGggUmVnaXMgQ29ycG9yYXRpb24uPC9wPgogICAgICA8cCBjbGFzcz0iZnVsbCI+T3JpZ2luYWxseSBmcm9tIEFsdG9vbmEsIFBlbm5zeWx2YW5pYSwgQmVsaW5kYSBoYXMgYmVlbiBpbiB0aGUgaGFpciBpbmR1c3RyeSBzaW5jZSAxOTgxLiBTaGUgc3BlbnQgMjIgeWVhcnMgd2l0aCBSZWdpcyBDb3Jwb3JhdGlvbiBhdCBNYXN0ZXJjdXRzIGFuZCBTbWFydFN0eWxlIHNhbG9ucywgYW5kIHJlbG9jYXRlZCB0byBBc2hldmlsbGUgaW4gMjAyMiB0byBiZSBjbG9zZXIgdG8gZmFtaWx5LjwvcD4KICAgICAgPGJ1dHRvbiBjbGFzcz0ibW9yZSIgdHlwZT0iYnV0dG9uIj5SZWFkIG1vcmU8L2J1dHRvbj4KICAgIDwvZGl2PgogIDwvZGl2PgoKICA8ZGl2IGNsYXNzPSJjYXJkIHN0YWZmLWNhcmQiPgogICAgPGRpdiBjbGFzcz0id2hvIj4KICAgICAgPGgzPk5pY2sgVmFyZ2FzPC9oMz48ZGl2IGNsYXNzPSJyb2xlIj5TcGVjaWFsdHkgQmFyYmVyICZtaWRkb3Q7IEJ5IEFwcG9pbnRtZW50PC9kaXY+CiAgICAgIDxwIGNsYXNzPSJ0ZWFzZXIiPlRoaXJkLWdlbmVyYXRpb24gYmFyYmVyIOKAlCBib29rIGhpbSB0aHJvdWdoIHRoZSBhcHAuPC9wPgogICAgICA8cCBjbGFzcz0iZnVsbCI+Q2xpcHBlcnonIGZpcnN0IHNwZWNpYWx0eSBiYXJiZXIgYW5kIGEgcHJvdWQgdGhpcmQtZ2VuZXJhdGlvbiBiYXJiZXIuIEEgcGVyZmVjdGlvbmlzdCB3aG8gc3BlY2lhbGl6ZXMgaW4gYSB3aWRlIHZhcmlldHkgb2YgaGFpcmN1dHMgYW5kIG1lbidzIGdyb29taW5nIGJ5IGFwcG9pbnRtZW50IG9ubHkuPC9wPgogICAgICA8YnV0dG9uIGNsYXNzPSJtb3JlIiB0eXBlPSJidXR0b24iPlJlYWQgbW9yZTwvYnV0dG9uPgogICAgICA8ZGl2IHN0eWxlPSJtYXJnaW4tdG9wOjEwcHgiPjxhIGNsYXNzPSJidG4gZ29sZCIgaHJlZj0iaHR0cHM6Ly9hcHAudGhlY3V0LmNvL2JhcmJlcnMvNjhiODVmYzQxOTVjM2FjODkzODMwMTQxIiB0YXJnZXQ9Il9ibGFuayIgcmVsPSJub29wZW5lciIgc3R5bGU9Im1pbi13aWR0aDowO3BhZGRpbmc6MTFweCAyMnB4O2ZvbnQtc2l6ZToxNXB4Ij5Cb29rIHdpdGggTmljazwvYT48L2Rpdj4KICAgIDwvZGl2PgogIDwvZGl2Pgo8L3NlY3Rpb24+Cgo8c2VjdGlvbiBpZD0iZ3VhcmFudGVlIiBjbGFzcz0icnYiPgogIDxkaXYgY2xhc3M9InNlY3Rpb24taGVhZCI+PGgyPk91ciBHdWFyYW50ZWU8L2gyPjxkaXYgY2xhc3M9InJ1bGUiPjwvZGl2PjwvZGl2PgogIDxkaXYgY2xhc3M9Imd1YXJhbnRlZSI+CiAgICA8cD48c3Ryb25nPldlIGd1YXJhbnRlZSBvdXIgaGFpcmN1dHMgd2lsbCBncm93IGJhY2s8L3N0cm9uZz4g4oCUIGJ1dCB3ZSB3YW50IHlvdSB0byBsb3ZlIHlvdXIgY3V0LjwvcD4KICAgIDxwPklmIHlvdSdyZSBub3QgY29tcGxldGVseSBzYXRpc2ZpZWQsIGxldCB1cyBrbm93IHdpdGhpbiA3IGRheXMgYW5kIGEgcXVhbGlmaWVkIG9wZXJhdG9yIHdpbGwgbWFrZSBhbnkgYWRqdXN0bWVudHMsIDxzdHJvbmc+ZnJlZSBvZiBjaGFyZ2U8L3N0cm9uZz4uPC9wPgogICAgPHA+WW91ciBzYXRpc2ZhY3Rpb24gaXMgb3VyICMxIHByaW9yaXR5LjwvcD4KICA8L2Rpdj4KPC9zZWN0aW9uPgoKPHNlY3Rpb24gaWQ9ImZpbmQiIGNsYXNzPSJydiI+CiAgPGRpdiBjbGFzcz0ic2VjdGlvbi1oZWFkIj48aDI+RmluZCBVczwvaDI+PGRpdiBjbGFzcz0icnVsZSI+PC9kaXY+PC9kaXY+CiAgPGRpdiBjbGFzcz0iY2FyZCI+CiAgICA8ZGl2IGNsYXNzPSJhZGRyIj4KICAgICAgPHNwYW4gY2xhc3M9ImxibCI+QWRkcmVzczwvc3Bhbj4KICAgICAgMTMzIFdlYXZlcnZpbGxlIFJkLCBTdWl0ZSA0PGJyPkFzaGV2aWxsZSwgTkMgMjg4MDQKICAgICAgPHNwYW4gY2xhc3M9ImxibCI+UGhvbmU8L3NwYW4+CiAgICAgIDxhIGNsYXNzPSJiaWctbGluayIgaHJlZj0idGVsOisxODI4NDg0NzIyMCI+KDgyOCkgNDg0LTcyMjA8L2E+CiAgICAgIDxzcGFuIGNsYXNzPSJsYmwiPkVtYWlsPC9zcGFuPgogICAgICA8YSBocmVmPSJtYWlsdG86Y2xpcHBlcnpvZmFzaGV2aWxsZUBnbWFpbC5jb20iPmNsaXBwZXJ6b2Zhc2hldmlsbGVAZ21haWwuY29tPC9hPgogICAgPC9kaXY+CiAgICA8YSBjbGFzcz0ibWFwYnRuIiBocmVmPSJodHRwczovL3d3dy5nb29nbGUuY29tL21hcHMvc2VhcmNoLz9hcGk9MSZhbXA7cXVlcnk9MTMzK1dlYXZlcnZpbGxlK1JkK1N1aXRlKzQrQXNoZXZpbGxlK05DKzI4ODA0IiB0YXJnZXQ9Il9ibGFuayIgcmVsPSJub29wZW5lciI+R2V0IERpcmVjdGlvbnM8L2E+CiAgPC9kaXY+Cjwvc2VjdGlvbj4KCjxmb290ZXI+CiAgJmNvcHk7IDIwMjYgQ2xpcHBlcnogb2YgQXNoZXZpbGxlLiBBbGwgcmlnaHRzIHJlc2VydmVkLjxicj4KICA8YSBocmVmPSIuLi8iPlZpZXcgZnVsbCBkZXNrdG9wIHNpdGU8L2E+CjwvZm9vdGVyPgoKPG5hdiBjbGFzcz0iY2FsbGJhciIgYXJpYS1sYWJlbD0iUXVpY2sgYWN0aW9ucyI+CiAgPGEgY2xhc3M9ImNhbGwiIGhyZWY9InRlbDorMTgyODQ4NDcyMjAiPkNhbGwgTm93PC9hPgogIDxhIGNsYXNzPSJkaXIiIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vbWFwcy9zZWFyY2gvP2FwaT0xJmFtcDtxdWVyeT0xMzMrV2VhdmVydmlsbGUrUmQrU3VpdGUrNCtBc2hldmlsbGUrTkMrMjg4MDQiIHRhcmdldD0iX2JsYW5rIiByZWw9Im5vb3BlbmVyIj5EaXJlY3Rpb25zPC9hPgo8L25hdj4KCjxzY3JpcHQ+Ci8vIHN0YWZmIGNhcmQgZXhwYW5kZXJzCmRvY3VtZW50LnF1ZXJ5U2VsZWN0b3JBbGwoJy5zdGFmZi1jYXJkIC5tb3JlJykuZm9yRWFjaChmdW5jdGlvbihidG4pewogIGJ0bi5hZGRFdmVudExpc3RlbmVyKCdjbGljaycsIGZ1bmN0aW9uKCl7CiAgICB2YXIgY2FyZCA9IGJ0bi5jbG9zZXN0KCcuc3RhZmYtY2FyZCcpOwogICAgdmFyIG9wZW4gPSBjYXJkLmNsYXNzTGlzdC50b2dnbGUoJ29wZW4nKTsKICAgIGJ0bi50ZXh0Q29udGVudCA9IG9wZW4gPyAnU2hvdyBsZXNzJyA6ICdSZWFkIG1vcmUnOwogIH0pOwp9KTsKLy8gc2Nyb2xsIHJldmVhbAp2YXIgaW8gPSBuZXcgSW50ZXJzZWN0aW9uT2JzZXJ2ZXIoZnVuY3Rpb24oZW50cmllcyl7CiAgZW50cmllcy5mb3JFYWNoKGZ1bmN0aW9uKGUpeyBpZihlLmlzSW50ZXJzZWN0aW5nKXsgZS50YXJnZXQuY2xhc3NMaXN0LmFkZCgnaW4nKTsgaW8udW5vYnNlcnZlKGUudGFyZ2V0KTsgfSB9KTsKfSx7dGhyZXNob2xkOjAuMDh9KTsKZG9jdW1lbnQucXVlcnlTZWxlY3RvckFsbCgnLnJ2JykuZm9yRWFjaChmdW5jdGlvbihlbCl7IGlvLm9ic2VydmUoZWwpOyB9KTsKPC9zY3JpcHQ+CjwvYm9keT4KPC9odG1sPgo=
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Clipperz of Asheville — Haircuts for Men &amp; Women</title>
+<meta name="description" content="Clipperz of Asheville — family hair shop in Woodfin, NC. Walk-ins welcome. Haircuts, fades, beard trims, ear piercing, waxing & nail services.">
+<link rel="icon" href="../assets/img/favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#141414;
+  --bg2:#1d1d1d;
+  --card:#222222;
+  --gold:#d9a441;
+  --gold-soft:#f0c873;
+  --text:#f4f1ea;
+  --muted:#b9b2a4;
+  --line:#33302a;
+  --call:#1e8e4f;
+  --radius:14px;
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--bg);color:var(--text);
+  font-family:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
+  font-size:16px;line-height:1.55;
+  padding-bottom:92px; /* room for sticky call bar */
+}
+h1,h2,h3,.display{font-family:'Oswald','Arial Narrow',sans-serif;text-transform:uppercase;letter-spacing:.04em;margin:0}
+a{color:inherit}
+
+/* ---------- top bar ---------- */
+.topbar{
+  position:sticky;top:0;z-index:50;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:10px 16px;
+  background:rgba(20,20,20,.92);backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.topbar .brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+.topbar .brand img{height:34px;width:auto}
+.topbar .brand span{font-family:'Oswald',sans-serif;text-transform:uppercase;font-size:17px;letter-spacing:.06em}
+.topbar .callbtn{
+  background:var(--call);color:#fff;text-decoration:none;font-weight:600;
+  padding:10px 18px;border-radius:999px;font-size:15px;
+}
+
+/* ---------- hero ---------- */
+.hero{
+  text-align:center;padding:44px 20px 34px;
+  background:radial-gradient(120% 90% at 50% 0%,#2a2419 0%,var(--bg) 62%);
+}
+.hero img.logo{width:min(220px,60vw);height:auto;filter:drop-shadow(0 6px 18px rgba(0,0,0,.5))}
+.hero .est{
+  margin-top:14px;color:var(--gold);font-family:'Oswald',sans-serif;
+  letter-spacing:.35em;font-size:12px;text-transform:uppercase;
+}
+.hero h1{font-size:clamp(30px,8.5vw,44px);line-height:1.05;margin:10px 0 6px}
+.hero p.sub{color:var(--muted);margin:0 0 22px;font-size:15px}
+.cta-row{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.btn{
+  display:inline-block;text-decoration:none;font-weight:600;font-size:16px;
+  padding:14px 26px;border-radius:12px;min-width:150px;text-align:center;
+}
+.btn.gold{background:var(--gold);color:#191510}
+.btn.ghost{border:1.5px solid var(--gold);color:var(--gold-soft)}
+
+/* ---------- sections ---------- */
+section{padding:30px 18px}
+.section-head{display:flex;align-items:center;gap:12px;margin-bottom:16px}
+.section-head h2{font-size:22px;flex:0 0 auto}
+.section-head .rule{flex:1;height:1px;background:var(--line)}
+.card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:16px;margin-bottom:12px;
+}
+.walkin{
+  text-align:center;background:linear-gradient(135deg,#241d10,#1d1d1d);
+  border:1px solid #4a3d22;
+}
+.walkin .big{font-family:'Oswald',sans-serif;font-size:24px;color:var(--gold-soft);text-transform:uppercase;letter-spacing:.05em}
+.walkin p{color:var(--muted);margin:6px 0 0;font-size:14.5px}
+
+/* hours */
+.hours-grid{display:grid;grid-template-columns:1fr auto;gap:6px 14px;font-size:15.5px}
+.hours-grid .d{color:var(--muted)}
+.hours-grid .t{font-weight:600;text-align:right}
+.hours-note{font-size:13px;color:var(--muted);margin-top:10px}
+.hours-note strong{color:var(--gold-soft)}
+
+/* price menu */
+.price-item{
+  display:flex;justify-content:space-between;align-items:baseline;gap:12px;
+  padding:11px 2px;border-bottom:1px dashed #3a372f;
+}
+.price-item:last-child{border-bottom:none}
+.price-item .name{font-size:16px}
+.price-item .amt{
+  font-family:'Oswald',sans-serif;font-size:19px;color:var(--gold-soft);white-space:nowrap;
+}
+.fine{font-size:13px;color:var(--muted);margin-top:12px}
+.fine a{color:var(--gold-soft)}
+.callout{
+  background:#241d10;border:1px solid #4a3d22;border-radius:var(--radius);
+  padding:14px 16px;margin-top:12px;font-size:15px;
+}
+.callout strong{color:var(--gold-soft)}
+
+/* specialties */
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{
+  background:#26221a;border:1px solid #4a3d22;color:var(--gold-soft);
+  padding:9px 14px;border-radius:999px;font-size:14px;font-weight:500;
+  font-family:'Oswald',sans-serif;text-transform:uppercase;letter-spacing:.05em;
+}
+
+/* staff */
+.staff-card{display:flex;gap:14px;align-items:flex-start}
+.staff-card img{
+  width:76px;height:76px;object-fit:cover;border-radius:50%;flex:0 0 auto;
+  border:2px solid var(--gold);
+}
+.staff-card .who h3{font-size:17px;margin-bottom:2px}
+.staff-card .who .role{font-size:13px;color:var(--gold);text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px}
+.staff-card .who p{font-size:14px;color:var(--muted);margin:0}
+.staff-card .who p.full{display:none}
+.staff-card.open .who p.full{display:block;margin-top:8px}
+.staff-card .who p.teaser{display:block}
+.staff-card.open .who p.teaser{display:none}
+.more{
+  background:none;border:none;color:var(--gold-soft);font-size:14px;font-weight:600;
+  padding:6px 0 0;cursor:pointer;
+}
+
+/* guarantee */
+.guarantee{border-left:3px solid var(--gold);padding-left:16px}
+.guarantee p{margin:0 0 8px;font-size:15px;color:var(--muted)}
+.guarantee strong{color:var(--text)}
+
+/* find us */
+.addr{font-size:16px;line-height:1.7}
+.addr .lbl{color:var(--gold);font-size:12px;text-transform:uppercase;letter-spacing:.15em;display:block;margin-top:10px}
+.addr .lbl:first-child{margin-top:0}
+.addr a.big-link{font-size:19px;font-weight:600;color:var(--gold-soft);text-decoration:none}
+.mapbtn{
+  display:block;text-align:center;margin-top:14px;background:var(--gold);color:#191510;
+  font-weight:600;text-decoration:none;padding:15px;border-radius:12px;font-size:16px;
+}
+
+/* footer */
+footer{text-align:center;padding:26px 18px 10px;color:var(--muted);font-size:13.5px}
+footer a{color:var(--gold-soft)}
+
+/* sticky call bar */
+.callbar{
+  position:fixed;left:0;right:0;bottom:0;z-index:60;
+  display:flex;gap:10px;padding:12px 14px calc(12px + env(safe-area-inset-bottom));
+  background:rgba(20,20,20,.96);backdrop-filter:blur(10px);
+  border-top:1px solid var(--line);
+}
+.callbar a{
+  flex:1;text-align:center;text-decoration:none;font-weight:700;font-size:16.5px;
+  padding:14px;border-radius:12px;
+}
+.callbar .call{background:var(--call);color:#fff}
+.callbar .dir{background:#2c2c2c;color:var(--gold-soft);border:1px solid #4a3d22}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(18px);transition:opacity .5s ease,transform .5s ease}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="#top" aria-label="Clipperz of Asheville home">
+    <img src="../assets/img/clipz/logo-clipped.png" alt="Clipperz logo">
+    <span>Clipperz</span>
+  </a>
+  <a class="callbtn" href="tel:+18284847220">Call</a>
+</header>
+
+<div class="hero" id="top">
+  <img class="logo" src="../assets/img/clipz/logo-clipped.png" alt="Clipperz of Asheville">
+  <div class="est">Est. 2021 &middot; Woodfin, NC</div>
+  <h1>Great cuts,<br>zero attitude.</h1>
+  <p class="sub">A family hair shop in the heart of Woodfin — next door to Bellagio Bistro.<br>Ladies and children welcome. Walk-ins welcome.</p>
+  <div class="cta-row">
+    <a class="btn gold" href="tel:+18284847220">Call (828) 484-7220</a>
+    <a class="btn ghost" href="https://app.thecut.co/barbers/68b85fc4195c3ac893830141" target="_blank" rel="noopener">Book Nick</a>
+  </div>
+</div>
+
+<section class="rv">
+  <div class="card walkin">
+    <div class="big">No appointments necessary</div>
+    <p>Just walk on in and enjoy a beverage from our coffee bar while you wait — flat-screen TV, good reads, and shop banter included.</p>
+  </div>
+</section>
+
+<section id="hours" class="rv">
+  <div class="section-head"><h2>Hours</h2><div class="rule"></div></div>
+  <div class="card">
+    <div class="hours-grid">
+      <span class="d">Monday – Friday</span><span class="t">9:00 – 4:30</span>
+      <span class="d">Saturday</span><span class="t">9:00 – 2:00</span>
+      <span class="d">Sunday</span><span class="t">Closed</span>
+    </div>
+    <div class="hours-note"><strong>Daylight savings hours:</strong> Mon–Fri 9:00 – 4:00, Sat 9:00 – 2:00, Sun closed.</div>
+  </div>
+</section>
+
+<section id="prices" class="rv">
+  <div class="section-head"><h2>Price Menu</h2><div class="rule"></div></div>
+  <div class="card">
+    <div class="price-item"><span class="name">Standard Haircut</span><span class="amt">$25</span></div>
+    <div class="price-item"><span class="name">Ladies Cut</span><span class="amt">$30</span></div>
+    <div class="price-item"><span class="name">Cut w/ Beard Trim</span><span class="amt">$35</span></div>
+    <div class="price-item"><span class="name">Cut w/ Foil Shave</span><span class="amt">$35</span></div>
+    <div class="price-item"><span class="name">Skin Fade</span><span class="amt">$30</span></div>
+    <div class="price-item"><span class="name">Buzz Cut</span><span class="amt">$20</span></div>
+    <div class="price-item"><span class="name">Undercut</span><span class="amt">$15</span></div>
+    <div class="price-item"><span class="name">Beard Trim</span><span class="amt">$15</span></div>
+    <div class="price-item"><span class="name">Foil Shave</span><span class="amt">$15</span></div>
+    <div class="price-item"><span class="name">Bang Trim</span><span class="amt">$5</span></div>
+    <div class="price-item"><span class="name">Edge / Shape Up</span><span class="amt">$15</span></div>
+    <div class="price-item"><span class="name">Shampoo</span><span class="amt">$10</span></div>
+    <div class="price-item"><span class="name">Blow Dry / Style</span><span class="amt">$20</span></div>
+    <p class="fine">*See booking app for Nick's prices. All haircuts include finishing work — straight razor neck shave by request.</p>
+  </div>
+  <div class="callout">
+    <strong>Ear piercing &amp; waxing</strong> — call for details.<br>
+    <strong>Basic nail services</strong> — by appointment with Linda.
+  </div>
+  <p class="fine">All prices subject to change at the stylist's discretion. ATM on site &middot; Free WiFi.</p>
+</section>
+
+<section id="services" class="rv">
+  <div class="section-head"><h2>Specialties</h2><div class="rule"></div></div>
+  <div class="chips">
+    <span class="chip">Fades</span><span class="chip">Flattops</span>
+    <span class="chip">Tapers</span><span class="chip">Undercuts</span>
+    <span class="chip">High-and-Tights</span><span class="chip">Buzz-Cuts</span>
+    <span class="chip">Bald Shaves</span><span class="chip">Beard Trims</span>
+    <span class="chip">Beard Friendly</span>
+  </div>
+</section>
+
+<section id="staff" class="rv">
+  <div class="section-head"><h2>Meet the Staff</h2><div class="rule"></div></div>
+
+  <div class="card staff-card">
+    <img src="../assets/img/aurora.jpg" alt="Aurora Ozzimo">
+    <div class="who">
+      <h3>Aurora Ozzimo</h3><div class="role">Owner &amp; Founder</div>
+      <p class="teaser">Licensed cosmetologist since 1982 — 40+ years behind the chair.</p>
+      <p class="full">Aurora has honed her craft for over four decades, apprenticing with master barbers and working 13 years at Asheville icons Fox Barbershop and Joe Kings. In 2021 she founded Clipperz, blending her wealth of experience with a warm, artistic touch.</p>
+      <button class="more" type="button">Read more</button>
+    </div>
+  </div>
+
+  <div class="card staff-card">
+    <img src="../assets/img/linda.jpg" alt="Linda Spears">
+    <div class="who">
+      <h3>Linda Spears</h3><div class="role">Stylist &middot; Nails</div>
+      <p class="teaser">In the beauty industry since 1982; 13 years at Joe Kings.</p>
+      <p class="full">Linda moved to Asheville from Springfield, Missouri in 1994. She spent 13 years at Joe Kings Hair Shop serving a wide range of customers — and she handles Clipperz's nail services by appointment.</p>
+      <button class="more" type="button">Read more</button>
+    </div>
+  </div>
+
+  <div class="card staff-card">
+    <img src="../assets/img/kelly.jpg" alt="Kelly Thornton">
+    <div class="who">
+      <h3>Kelly Thornton</h3><div class="role">Stylist</div>
+      <p class="teaser">Cutting since 1988 — Supercuts management to classic barbershops.</p>
+      <p class="full">Kelly started in Indianapolis in 1988, opened and managed a Supercuts in Naples, FL, then honed her barbering in local shops. She moved to Western North Carolina in 2010 and now brings her passion for the perfect haircut to Clipperz.</p>
+      <button class="more" type="button">Read more</button>
+    </div>
+  </div>
+
+  <div class="card staff-card">
+    <img src="../assets/img/deborah.jpg" alt="Deborah Stewart">
+    <div class="who">
+      <h3>Deborah Stewart</h3><div class="role">Stylist</div>
+      <p class="teaser">Cutting since 1996 — 20 years co-owning Fox Barbershop.</p>
+      <p class="full">A Madison County native, Deborah co-owned and operated Fox Barbershop in Asheville with her husband for 20 years. She loves taking her time and building relationships with new clients.</p>
+      <button class="more" type="button">Read more</button>
+    </div>
+  </div>
+
+  <div class="card staff-card">
+    <img src="../assets/img/joanne.jpg" alt="Joanne Queen">
+    <div class="who">
+      <h3>Joanne Queen</h3><div class="role">Stylist</div>
+      <p class="teaser">Clipperz stylist.</p>
+      <button class="more" type="button" hidden>Read more</button>
+    </div>
+  </div>
+
+  <div class="card staff-card">
+    <img src="../assets/img/belinda.jpg" alt="Belinda Caputo">
+    <div class="who">
+      <h3>Belinda Caputo</h3><div class="role">Stylist</div>
+      <p class="teaser">40+ years in hair — 22 years with Regis Corporation.</p>
+      <p class="full">Originally from Altoona, Pennsylvania, Belinda has been in the hair industry since 1981. She spent 22 years with Regis Corporation at Mastercuts and SmartStyle salons, and relocated to Asheville in 2022 to be closer to family.</p>
+      <button class="more" type="button">Read more</button>
+    </div>
+  </div>
+
+  <div class="card staff-card">
+    <div class="who">
+      <h3>Nick Vargas</h3><div class="role">Specialty Barber &middot; By Appointment</div>
+      <p class="teaser">Third-generation barber — book him through the app.</p>
+      <p class="full">Clipperz' first specialty barber and a proud third-generation barber. A perfectionist who specializes in a wide variety of haircuts and men's grooming by appointment only.</p>
+      <button class="more" type="button">Read more</button>
+      <div style="margin-top:10px"><a class="btn gold" href="https://app.thecut.co/barbers/68b85fc4195c3ac893830141" target="_blank" rel="noopener" style="min-width:0;padding:11px 22px;font-size:15px">Book with Nick</a></div>
+    </div>
+  </div>
+</section>
+
+<section id="guarantee" class="rv">
+  <div class="section-head"><h2>Our Guarantee</h2><div class="rule"></div></div>
+  <div class="guarantee">
+    <p><strong>We guarantee our haircuts will grow back</strong> — but we want you to love your cut.</p>
+    <p>If you're not completely satisfied, let us know within 7 days and a qualified operator will make any adjustments, <strong>free of charge</strong>.</p>
+    <p>Your satisfaction is our #1 priority.</p>
+  </div>
+</section>
+
+<section id="find" class="rv">
+  <div class="section-head"><h2>Find Us</h2><div class="rule"></div></div>
+  <div class="card">
+    <div class="addr">
+      <span class="lbl">Address</span>
+      133 Weaverville Rd, Suite 4<br>Asheville, NC 28804
+      <span class="lbl">Phone</span>
+      <a class="big-link" href="tel:+18284847220">(828) 484-7220</a>
+      <span class="lbl">Email</span>
+      <a href="mailto:clipperzofasheville@gmail.com">clipperzofasheville@gmail.com</a>
+    </div>
+    <a class="mapbtn" href="https://www.google.com/maps/search/?api=1&amp;query=133+Weaverville+Rd+Suite+4+Asheville+NC+28804" target="_blank" rel="noopener">Get Directions</a>
+  </div>
+</section>
+
+<footer>
+  &copy; 2026 Clipperz of Asheville. All rights reserved.<br>
+  <a href="../">View full desktop site</a>
+</footer>
+
+<nav class="callbar" aria-label="Quick actions">
+  <a class="call" href="tel:+18284847220">Call Now</a>
+  <a class="dir" href="https://www.google.com/maps/search/?api=1&amp;query=133+Weaverville+Rd+Suite+4+Asheville+NC+28804" target="_blank" rel="noopener">Directions</a>
+</nav>
+
+<script>
+// staff card expanders
+document.querySelectorAll('.staff-card .more').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    var card = btn.closest('.staff-card');
+    var open = card.classList.toggle('open');
+    btn.textContent = open ? 'Show less' : 'Read more';
+  });
+});
+// scroll reveal
+var io = new IntersectionObserver(function(entries){
+  entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+},{threshold:0.08});
+document.querySelectorAll('.rv').forEach(function(el){ io.observe(el); });
+</script>
+</body>
+</html>
